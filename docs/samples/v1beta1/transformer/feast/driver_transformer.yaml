@@ -1,0 +1,19 @@
+apiVersion: "serving.kubeflow.org/v1beta1"
+kind: "InferenceService"
+metadata:
+  name: "sklearn-driver-transformer"
+spec:
+  transformer:
+    feast:
+      feast_serving_url: "x.x.x.x:x"
+      entity_ids:
+      - driver_id
+      feature_refs:
+      - driver_statistics:acc_rate 
+      - driver_statistics:avg_daily_trips 
+      - driver_statistics:conv_rate
+  predictor:
+    sklearn:
+      storageUri: "gs://pv-kfserving/driver"
+          
+
