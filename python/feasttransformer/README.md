@@ -1,6 +1,6 @@
-# Scikit-Learn Server
+# Feast Transformer 
 
-[Scikit-Learn](https://scikit-learn.org/stable/) server is an implementation of KFServing for serving Scikit-learn models, and provides a Scikit-learn model implementation for prediction, pre and post processing.
+[Feast](https://github.com/feast-dev/feast) transformer is an implementation of KFServing for augmenting input with Feast online features as part of pre processing for prediction.
 
 To start the server locally for development needs, run the following command under this folder in your github repository.
 
